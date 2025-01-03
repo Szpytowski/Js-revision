@@ -1083,3 +1083,508 @@ setTimeout(function() {
 
 
 
+
+
+
+// ----------------- ASSIGNMENTS ------------------------
+// *1 https://doc.clickup.com/24538860/d/h/qcvqc-2188/edd221b0a807af5
+/*
+
+// 1
+const widht = 5000;
+const height= 20;
+const area = widht * height;
+console.log(area);
+
+// 2
+let firstNumber = 1;
+let secondNumber = 2;
+
+const swapFirstNumber = firstNumber
+const swapSecondNumber = secondNumber;
+
+secondNumber = swapFirstNumber;
+firstNumber = swapSecondNumber;
+
+console.log(firstNumber);
+console.log(secondNumber);
+
+//3
+const physics = 4.2;
+const math = 4.8;
+const english = 3.9;
+
+const avarageGrade = (physics + math + english) / 3;
+if(avarageGrade > 4){
+  console.log('Good Job!');
+}
+else{
+  console.log('Try harder!');
+}
+
+//4
+const currentAge = 30;
+const retirenmentAgeInPoland = 67;
+let yearsLeftToRetirenment = retirenmentAgeInPoland;
+
+yearsLeftToRetirenment = retirenmentAgeInPoland - currentAge;
+
+console.log(yearsLeftToRetirenment);
+
+//5
+const isPayingVAT = true;
+let VATRateInPoland = 0.23;
+const incomeTaxRate = 0.12;
+let monthlyIncome = 3500;
+let taxToPay = 0; // let
+
+if (isPayingVAT) {
+  taxToPay = monthlyIncome * VATRateInPoland; // TYP0
+}
+
+taxToPay = taxToPay + monthlyIncome * incomeTaxRate;
+
+console.log('tax to pay: ' + taxToPay);
+
+//6
+const isSunny = true;
+let message = isSunny ? "Don't forget your sunglasses!" : "You might need an umbrella.";
+console.log(message);
+
+//7
+const currentMonth = 12
+
+if (currentMonth === 12) {
+  console.log("It's winter");
+} else if (currentMonth === 1) {
+  console.log("It's winter");
+} else if (currentMonth === 2) {
+  console.log("It's winter");
+} else if (currentMonth === 3) {
+  console.log("It's spring");
+} else if (currentMonth === 4) {
+  console.log("It's spring");
+} else if (currentMonth === 5) {
+  console.log("It's spring");
+} else if (currentMonth === 6) {
+  console.log("It's summer");
+} else if (currentMonth === 7) {
+  console.log("It's summer");
+} else if (currentMonth === 8) {
+  console.log("It's summer");
+} else if (currentMonth === 9) {
+  console.log("It's fall");
+} else if (currentMonth === 10) {
+  console.log("It's fall");
+} else {
+  console.log("It's fall")
+};
+
+// Ternary op
+let season = (currentMonth === 12) ? "It's winter"
+  : (currentMonth === 1) ? "It's winter"
+  : (currentMonth === 2) ? "It's winter"
+  : (currentMonth === 3) ? "It's spring"
+  : (currentMonth === 4) ? "It's spring"
+  : (currentMonth === 5) ? "It's spring"
+  : (currentMonth === 6) ? "It's summer"
+  : (currentMonth === 7) ? "It's summer"
+  : (currentMonth === 8) ? "It's summer"
+  : (currentMonth === 9) ? "It's fall"
+  : (currentMonth === 10) ? "It's fall"
+  : "It's fall";
+
+console.log(season);
+
+// 8
+const personWeight = 70;
+const personHeight = 1.74;
+const BMI = personWeight / (personHeight*personHeight);
+console.log(BMI);
+
+// 9
+let age = 16;
+
+if (age >= 18) {
+  console.log("You can vote.");
+} else {
+  console.log("You can't vote.");
+}
+// TRNRY OP
+let result = (age >= 18) ? "You can vote." : "You can't vote.";
+console.log(result);
+
+//10
+let currentColor = "green";
+
+if (currentColor === "red") {
+  console.log("Stop");
+} else if (currentColor === "yellow") {
+  console.log("Speed up");
+} else {
+  console.log("Go");
+}
+
+// 11
+let month = 7;
+
+if (month === 1) {
+  console.log("January");
+} else if (month === 2) {
+  console.log("February");
+} else if (month === 3) {
+  console.log("March");
+} else if (month === 4) {
+  console.log("April");
+} else if (month === 5) {
+  console.log("May");
+} else if (month === 6) {
+  console.log("June");
+} else if (month === 7) {
+  console.log("July");
+} else if (month === 8) {
+  console.log("August");
+} else if (month === 9) {
+  console.log("September");
+} else if (month === 10) {
+  console.log("October");
+} else if (month === 11) {
+  console.log("November");
+} else {
+  console.log("December")
+};
+
+// 12
+const number = 10;
+const isDivisibleBy3 = (number % 3 === 0) ? 'Divisible by 3' : "Not Divisible by 3";
+const isDivisibleBy5 = (number % 5 === 0) ? 'Divisible by 5' : "Not Divisible by 5";
+const isDivisblyBy3and5 = (number % 5 === 0 && number % 3 === 0) ? 'Divisible by 3 and 5' : "Not Divisible by 3 and 5";
+
+console.log(isDivisibleBy3);
+console.log(isDivisibleBy5);
+console.log(isDivisblyBy3and5);
+
+// 13
+let radius = 5;
+let circleArea = Math.PI * Math.pow(radius, 2);
+
+console.log(`The area of the circle is: ${circleArea}`);
+
+// 14
+let studentScore = 77;
+
+let grade;
+
+if (studentScore >= 90) {
+  grade = 'A';
+} else if (studentScore >= 80) {
+  grade = 'B';
+} else if (studentScore >= 70) {
+  grade = 'C';
+} else if (studentScore >= 60) {
+  grade = 'D';
+} else {
+  grade = 'F';
+}
+
+console.log(`The student's grade is: ${grade}`);
+
+// 15
+let carSpeed = 98;
+let speedLimit = 88;
+
+if (carSpeed <= speedLimit) {
+  console.log("Speed is fine");
+} else {
+  console.log("Speeding!");
+}
+// TRNRY OP
+let speedAlert = (carSpeed <= speedLimit) ? "Speed is fine" : "Speeding!";
+console.log(speedAlert);
+
+// 16
+const userAge = 21;
+let isAdult = false;
+
+if(userAge >= 18) {
+  isAdult = true;
+}
+
+alert(isAdult)
+
+// 17
+const driverAge = 21;
+const hasDrivingLicense = true;
+
+let isDriverAdult = (driverAge >= 18) ? true : false;
+let canDriveLegally = (isDriverAdult && hasDrivingLicense) ? true : false;
+
+
+let allowedToDrive = (canDriveLegally ? "The user can drive legally." : "The user cannot drive legally.");
+console.log(allowedToDrive);
+*/
+
+// ----------------- ASSIGNMENTS ------------------------
+// *2 https://doc.clickup.com/24538860/d/h/qcvqc-4212/46fac16fbd304d9
+/*
+function openYT(){
+  open('https://youtube.com')
+}
+
+
+if (confirm("Do you want to go to YouTube?")) {
+  openYT();
+} else {
+  console.log("You chose not to go to YouTube.");
+}
+
+
+// TRNRY
+confirm("Do you want to go to YouTube?") ? openYT() : false;
+*/
+
+// 1
+function getGreeting (firstName, lastName) {
+  return `Hi, "${firstName} ${lastName}". What's up?`;
+}
+
+const greeting = getGreeting('John', 'Smith');
+console.log(greeting);
+
+// 2
+function isThisMyName(name){
+  return name === 'Nicolas';
+}
+console.log(isThisMyName('Nicolas'));
+
+// 3
+function isThisBoolean(value){
+  return (typeof value === 'boolean');
+}
+
+console.log(isThisBoolean(true));    // true
+console.log(isThisBoolean(false));   // true
+console.log(isThisBoolean('true'));  // false
+console.log(isThisBoolean(1));       // false
+
+// 4
+function getCircleArea (radius){
+  return  Math.PI * (radius*radius);
+}
+const radius = 5;
+const area = getCircleArea(radius);
+console.log(area); // 78.53981633974483
+
+// 5
+function getCirclesAreaSum(radius1, radius2) {
+  const area1 = getCircleArea(radius1);
+  const area2 = getCircleArea(radius2);
+
+  return area1 + area2;
+}
+
+const circlesAreaSum = getCirclesAreaSum(5, 10);
+console.log(circlesAreaSum); // 392.69908169872417
+
+// 6
+function quarterOf (month){
+  if (month <= 3){
+    return 1;
+  }
+  else if (month <= 6){
+    return 2;
+  }
+  else if (month <= 9){
+    return 3;
+  }
+  else {
+    return 4;
+  }
+}
+
+const thisquarter = quarterOf(9)
+console.log(thisquarter);
+
+// 7
+function convertMinutesToHours (minutes){
+  return minutes / 60
+}
+const hours = convertMinutesToHours(75);
+console.log(hours); // 1.25
+
+// 8
+function isTextUppercase (text){
+  return text.toUpperCase() === text ? true : false;
+}
+
+console.log(isTextUppercase('Hello')); // false
+console.log(isTextUppercase('HELLO')); // true
+
+// 9
+function isDivisible(n, x, y) {
+  return (n % x === 0 && n % y === 0);
+}
+
+// 10
+function getBillboardPrice (text, costPerChar){
+  return text.length * costPerChar;
+}
+console.log(getBillboardPrice('Hello world!', 10)); // 120
+console.log(getBillboardPrice('Hello world!', 15)); // 180
+console.log(getBillboardPrice('To be, or not to be', 20)); // 380
+
+// 11
+function oppositeNumber(number){
+  return number * -1;
+}
+
+// 12
+function makeNegative(number){
+  if (number > 0){
+    return number * -1;
+  }
+  return number;
+}
+
+function makeNegativePositive(number){
+  return number > 0 ? number * -1 : number;
+}
+
+// 13
+function removeChar(string){ // if I change the names it will not pass the test on codewars
+  return string.slice(1, string.length-1);
+};
+
+// 14
+function basicOp(operation, value1, value2){
+  return operation === '+' ? value1 + value2:
+          operation === '-' ? value1 - value2:
+            operation === '*' ? value1 * value2:
+              value1 / value2;
+}
+
+// 15
+function century(year) {
+  return Math.ceil(year/100);
+}
+
+// 16
+function evenOrOdd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd';
+}
+
+// 17
+function areYouPlayingBanjo(name) {
+  nameToLowerCase = name.toLowerCase();
+  return nameToLowerCase.startsWith('r')? name + " plays banjo" : name + " does not play banjo";
+}
+
+// 18
+function bmi(weight, height) {
+  const bmi = weight/ (height*height);
+  return bmi <= 18.5? "Underweight":
+          bmi <= 25.0 ?  "Normal":
+            bmi <= 30.0 ? "Overweight": "Obese";
+}
+
+// 19
+function rockPaperScissors(player1, player2) {
+  if (player1 === player2) {
+    return 0;  // Draw
+  }
+
+  if (
+    (player1 === 'rock' && player2 === 'scissors') ||
+    (player1 === 'scissors' && player2 === 'paper') ||
+    (player1 === 'paper' && player2 === 'rock')
+  ) {
+    return 1;  // Player 1 wins
+  }
+
+  return 2;  // Player 2 wins
+}
+
+// 20
+function getCalculationResult (firstNumber, secondNumber, calculationType){
+  return calculationType === '+'? firstNumber + secondNumber:
+          calculationType === '-'? firstNumber - secondNumber:
+            calculationType === '*'? firstNumber * secondNumber:
+              calculationType === '/'? firstNumber / secondNumber:
+                null;
+}
+
+console.log(getCalculationResult(10, 5, '+')); // 15
+console.log(getCalculationResult(10, 5, '-')); // 5
+console.log(getCalculationResult(10, 5, '*')); // 50
+console.log(getCalculationResult(10, 5, '/')); // 2
+
+// 21
+function getPercentageValue (baseNumber, percentage){
+  return baseNumber * (percentage/100);
+}
+
+// 22
+function getGreaterNumber (firstNumber, secondNumber){
+  return firstNumber > secondNumber? firstNumber :
+          secondNumber > firstNumber? secondNumber :
+            null;
+}
+
+console.log(getGreaterNumber(10, 5));  // 10 (first number is greater)
+console.log(getGreaterNumber(5, 10));  // 10 (second number is greater)
+console.log(getGreaterNumber(7, 7));   // null (both numbers are equal)
+console.log(getGreaterNumber(-3, 2));  // 2 (second number is greater)
+
+// 23
+function isOddNumber (number){
+  return number % 2 !== 0 ? true : false;
+}
+console.log(isOddNumber(5));  // true (5 is odd)
+console.log(isOddNumber(8));  // false (8 is even)
+console.log(isOddNumber(0));  // false (0 is even)
+
+// 24
+function isEvenNumber (number){
+  return number % 2 === 0 ? true : false;
+}
+console.log(isEvenNumber(5));  // False (5 is odd)
+console.log(isEvenNumber(8));  // True (8 is even)
+console.log(isEvenNumber(0));  // True (0 is even)
+
+// 25
+function isDivisble (number,divider){
+  return number % divider === 0? true : false;
+}
+console.log(isDivisble(20,10));
+console.log(isDivisble(20,11))
+
+// 26
+function getSmallerNumber (firstNumber, secondNumber){
+  return firstNumber < secondNumber? firstNumber :
+          firstNumber > secondNumber? secondNumber :
+            null
+}
+console.log(getSmallerNumber(10, 5));
+console.log(getSmallerNumber(1, 5));
+console.log(getSmallerNumber(10, 10));
+
+// 27
+function isNumberPoistuve (number){
+  return number >= 0? true : false;
+}
+console.log(isNumberPoistuve(5));
+console.log(isNumberPoistuve(-5));
+console.log(isNumberPoistuve(0));
+
+// 28
+function getCelciusConvertedToFahrenheit (celcius){
+  return celcius * 1.8 + 30;
+}
+
+// 29
+function getFahrenheitConvertedToCelcius (farenheit){
+  return farenheit / 1.8 - 30;
+}
+
+// 30
+
