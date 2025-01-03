@@ -1588,3 +1588,12 @@ function getFahrenheitConvertedToCelcius (farenheit){
 
 // 30
 
+//  31
+function getAverageOfThreeNumbers (firstNumber, secondNumber, thirdNumber){
+  return (firstNumber + secondNumber + thirdNumber)/3;
+}
+
+// 32
+function isNumberNegative (number){
+  return number < 0 ? true : false;
+}
