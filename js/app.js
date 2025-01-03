@@ -1458,9 +1458,9 @@ function removeChar(string){ // if I change the names it will not pass the test 
 // 14
 function basicOp(operation, value1, value2){
   return operation === '+' ? value1 + value2:
-          operation === '-' ? value1 - value2:
-            operation === '*' ? value1 * value2:
-              value1 / value2;
+    operation === '-' ? value1 - value2:
+      operation === '*' ? value1 * value2:
+        value1 / value2;
 }
 
 // 15
@@ -1483,8 +1483,8 @@ function areYouPlayingBanjo(name) {
 function bmi(weight, height) {
   const bmi = weight/ (height*height);
   return bmi <= 18.5? "Underweight":
-          bmi <= 25.0 ?  "Normal":
-            bmi <= 30.0 ? "Overweight": "Obese";
+    bmi <= 25.0 ?  "Normal":
+      bmi <= 30.0 ? "Overweight": "Obese";
 }
 
 // 19
@@ -1507,10 +1507,10 @@ function rockPaperScissors(player1, player2) {
 // 20
 function getCalculationResult (firstNumber, secondNumber, calculationType){
   return calculationType === '+'? firstNumber + secondNumber:
-          calculationType === '-'? firstNumber - secondNumber:
-            calculationType === '*'? firstNumber * secondNumber:
-              calculationType === '/'? firstNumber / secondNumber:
-                null;
+    calculationType === '-'? firstNumber - secondNumber:
+      calculationType === '*'? firstNumber * secondNumber:
+        calculationType === '/'? firstNumber / secondNumber:
+          null;
 }
 
 console.log(getCalculationResult(10, 5, '+')); // 15
@@ -1526,8 +1526,8 @@ function getPercentageValue (baseNumber, percentage){
 // 22
 function getGreaterNumber (firstNumber, secondNumber){
   return firstNumber > secondNumber? firstNumber :
-          secondNumber > firstNumber? secondNumber :
-            null;
+    secondNumber > firstNumber? secondNumber :
+      null;
 }
 
 console.log(getGreaterNumber(10, 5));  // 10 (first number is greater)
@@ -1561,8 +1561,8 @@ console.log(isDivisble(20,11))
 // 26
 function getSmallerNumber (firstNumber, secondNumber){
   return firstNumber < secondNumber? firstNumber :
-          firstNumber > secondNumber? secondNumber :
-            null
+    firstNumber > secondNumber? secondNumber :
+      null
 }
 console.log(getSmallerNumber(10, 5));
 console.log(getSmallerNumber(1, 5));
